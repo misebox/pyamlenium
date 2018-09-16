@@ -17,7 +17,12 @@ $ brew install chromedriver
 
 Install libraries
 ```
-$ # pyenv install 3.6.4
+$ pyenv install 3.6.4
+
+$ pyenv virtualenv 3.6.4 pyamlenium
+
+$ pyenv local pyamlenium
+
 $ pip install -r requirements.txt
 ```
 
