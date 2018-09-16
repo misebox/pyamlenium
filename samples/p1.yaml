@@ -1,0 +1,25 @@
+version: direction_v1
+common:
+  refs:
+    css:
+      signin_submit: "form button"
+procs:
+  - name: proc01
+    desc: Description
+    common:
+      base_url: http://0.0.0.0:8888
+    interval: 1000
+    refs:
+      css:
+        login_username: "input#id_username"
+        login_password: "input#id_password"
+        login_submit: 'input[type="submit"]'
+    commands:
+      - go: '/admin'
+      - set_context:
+          base_element: form
+      - find: login_username
+      - send_keys: admin
+      - find: login_password
+      - send_keys: yamlenium
+      - click: login_submit

@@ -1,0 +1,9 @@
+target/
+bin/
+.envrc
+.python-version
+.pytest_cache
+
+logs/
+*.pyc
+
